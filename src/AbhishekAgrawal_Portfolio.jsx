@@ -33,13 +33,13 @@ const PROJECTS = [
     icon: "🎓",
   },
   {
-    title: "Smart Contact Manager",
-    subtitle: "Secure Contact Management",
-    desc: "A secure, high-performance contact management application with fast data retrieval, authentication, and complete CRUD operations built on a robust Spring Boot backend.",
+    title: "FlowFi",
+    subtitle: "Online Banking System",
+    desc: "A secure full-stack online banking application that enables users to manage accounts, transfer funds, track transactions, and access banking services through a modern and responsive interface.",
     tech: ["Java", "Spring MVC", "Spring Boot", "REST API", "MySQL"],
-    features: ["Contact Management", "Authentication", "CRUD Operations", "Secure Storage"],
+    features: ["Account Management", "Fund Transfer", "Transaction History", "Secure Authentication"],
     color: "#a855f7",
-    icon: "📇",
+    icon: "🏦",
   },
 ];
 
@@ -224,7 +224,7 @@ export default function Portfolio() {
         {/* NAVBAR */}
         <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: scrolled ? "rgba(8,12,20,0.95)" : "transparent", backdropFilter: scrolled ? "blur(16px)" : "none", borderBottom: scrolled ? "1px solid rgba(255,255,255,0.06)" : "none", transition: "all 0.3s" }}>
           <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", height: 64, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 20, color: "#f1f5f9" }}>AA<span style={{ color: "#00d4ff" }}>.</span></div>
+            <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 20, color: "#f1f5f9" }}>A<span style={{ color: "#00d4ff" }}>.</span></div>
             <div className="desktop-nav" style={{ gap: 28, alignItems: "center" }}>
               {NAV_LINKS.map(l => (
                 <span key={l} className="nav-link" onClick={() => scrollTo(l.toLowerCase())} style={{ fontSize: 13, letterSpacing: "0.04em", fontFamily: "'DM Mono', monospace", color: activeSection === l.toLowerCase() ? "#00d4ff" : "#94a3b8" }}>{l}</span>
@@ -453,7 +453,7 @@ export default function Portfolio() {
               <div>
                 <p style={{ fontSize: 15, lineHeight: 1.9, color: "#64748b", marginBottom: 24 }}>I'm currently open to new opportunities. Whether you have a question, a project idea, or just want to say hi — my inbox is always open.</p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-                  {[{ label: "Email", value: "abhishek1.aa2@gmail.com", icon: "✉" }, { label: "Phone", value: "+91 XXXXX XXXXX", icon: "📞" }, { label: "Location", value: "Maharashtra, India", icon: "📍" }].map(({ label, value, icon }) => (
+                  {[{ label: "Email", value: "abhishek1.aa2@gmail.com", icon: "✉" }, { label: "Phone", value: "+91 82086 XXXXX", icon: "📞" }, { label: "Location", value: "Maharashtra, India", icon: "📍" }].map(({ label, value, icon }) => (
                     <div key={label} style={{ display: "flex", gap: 14, alignItems: "center" }}>
                       <div style={{ width: 40, height: 40, borderRadius: 10, background: "rgba(0,212,255,0.08)", border: "1px solid rgba(0,212,255,0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0 }}>{icon}</div>
                       <div>
@@ -474,7 +474,7 @@ export default function Portfolio() {
         {/* FOOTER */}
         <footer style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "24px 20px", position: "relative", zIndex: 1 }}>
           <div className="footer-inner" style={{ maxWidth: 1200, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
-            <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 18, color: "#f1f5f9" }}>AA<span style={{ color: "#00d4ff" }}>.</span></div>
+           {/* <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 18, color: "#f1f5f9" }}>A<span style={{ color: "#00d4ff" }}>.</span></div> */}
             <div className="footer-links" style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
               {NAV_LINKS.map(l => <span key={l} className="nav-link" onClick={() => scrollTo(l.toLowerCase())} style={{ fontSize: 12, color: "#475569", fontFamily: "'DM Mono', monospace" }}>{l}</span>)}
             </div>
