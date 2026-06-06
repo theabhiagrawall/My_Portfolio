@@ -674,7 +674,7 @@ export default function Portfolio() {
                 <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
                   {[
                     { label: "Email", value: "abhishek1.aa2@gmail.com.com", icon: "✉" },
-                    { label: "Phone", value: "+91 XXXXX XXXXX", icon: "📞" },
+                    { label: "Phone", value: "+91 820869 XXXX", icon: "📞" },
                     { label: "Location", value: "Maharashtra, India", icon: "📍" },
                   ].map(({ label, value, icon }) => (
                     <div key={label} style={{ display: "flex", gap: 16, alignItems: "center" }}>
