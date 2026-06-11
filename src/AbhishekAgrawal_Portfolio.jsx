@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Analytics } from "@vercel/analytics/next";
 
 const NAV_LINKS = ["About","Skills","Experience","Projects","Education","Certifications","Contact"];
 
@@ -269,7 +270,7 @@ export default function Portfolio() {
                     <a href="Abhishek_CV.pdf" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "transparent", border: "1px solid rgba(255,255,255,0.15)", color: "#f1f5f9", padding: "12px 24px", borderRadius: 8, fontWeight: 600, fontSize: 13, letterSpacing: "0.04em", fontFamily: "'DM Mono', monospace" }}>↓ DOWNLOAD CV</a>
                   </div>
                   <div className="hero-social" style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
-                    {[{ label: "GitHub", icon: "⌥", url: "https://github.com/theabhiagrawall" }, { label: "LinkedIn", icon: "in", url: "https://linkedin.com" }, { label: "Email", icon: "✉", url: "mailto:abhishek1.aa2@gmail.com" }].map(s => (
+                    {[{ label: "GitHub", icon: "⌥", url: "https://github.com/theabhiagrawall" }, { label: "LinkedIn", icon: "in", url: "https://www.linkedin.com/in/abhishek-agrawall" }, { label: "Email", icon: "✉", url: "mailto:abhishek1.aa2@gmail.com" }].map(s => (
                       <a key={s.label} href={s.url} style={{ width: 40, height: 40, borderRadius: 8, border: "1px solid rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "#64748b", fontSize: 14, fontFamily: "'DM Mono', monospace", fontWeight: 600 }}
                         onMouseEnter={e => { e.currentTarget.style.borderColor = "#00d4ff66"; e.currentTarget.style.color = "#00d4ff"; }}
                         onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; e.currentTarget.style.color = "#64748b"; }}
@@ -478,7 +479,7 @@ export default function Portfolio() {
             <div className="footer-links" style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
               {NAV_LINKS.map(l => <span key={l} className="nav-link" onClick={() => scrollTo(l.toLowerCase())} style={{ fontSize: 12, color: "#475569", fontFamily: "'DM Mono', monospace" }}>{l}</span>)}
             </div>
-            <span style={{ fontSize: 12, color: "#334155", fontFamily: "'DM Mono', monospace" }}>© 2024 ABHISHEK AGRAWAL</span>
+            <span style={{ fontSize: 12, color: "#334155", fontFamily: "'DM Mono', monospace" }}>© 2026 ABHISHEK AGRAWAL</span>
           </div>
         </footer>
 
